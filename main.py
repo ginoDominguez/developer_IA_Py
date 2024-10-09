@@ -1,16 +1,5 @@
-import os
-from datetime import date
+parsecs_input = input("Input number of parsecs:")
+parsecs = int(parsecs_input)
+lightyears = 3.26156 * parsecs
 
-parsecs = 11
-lightyears = parsecs * 3.26
-print(str(parsecs) + " parsecs is " + str(lightyears) + " lightyears")
-
-print(f"{parsecs} parsecs is  {lightyears} lightyears" )
-
-print( "{0} parsecs is  {1} lightyears".format(parsecs,lightyears) )
-
-
-
-
-
-
+print(parsecs_input + " parsecs is " + str(lightyears) + " lightyears")
