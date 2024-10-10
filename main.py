@@ -1,14 +1,13 @@
-### exercises about strings:
+planets = ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"]
+
+print(planets)
 
 
-name= 'Ganymede'
-planet= 'Mars'
-gravity= 1.43
+print("There are", len(planets), "planets")
 
-template= f"""Gravity Facts about {name}
-{'-' * 20}
-Planet Name: {planet}
-Gravity on {name}: {gravity} m/s2 """
+planets.append("Pluto")
 
+print("Actually, there are", len(planets), "planets")
 
-print(template.format(name=name, planet=planet, gravity=gravity))
+print(planets[-1], "is the last planet")
+
