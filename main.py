@@ -1,5 +1,10 @@
-parsecs_input = input("Input number of parsecs:")
-parsecs = int(parsecs_input)
-lightyears = 3.26156 * parsecs
+### Object size:
 
-print(parsecs_input + " parsecs is " + str(lightyears) + " lightyears")
+object_size = 10
+threshold= 900
+
+if object_size >5 and threshold<= 1000:
+    print("realizar acciones evasivas")
+else:
+    print("No presenta problemas")
+
