@@ -1,13 +1,22 @@
 
+### Moer exercises:
 
-### exercise with string:
 
-text= """Interesting facts about the Moon. The Moon is Earth's only satellite. There are several interesting facts about the Moon and how it affects life here on Earth. 
-On average, the Moon moves 4cm away from the Earth every year. This yearly drift is not significant enough to cause immediate effects on Earth. The highest daylight temperature of the Moon is 127 C."""
+mass_percentage = "1/6"
+print("On the Moon, you would weigh about %s of your weight on Earth." % mass_percentage)
 
-sentences= text.split(". ")
-#print(sentences)
 
-for sentencia in sentences:
-    if 'temperature' in sentencia:
-        print(sentencia)
+print("""Both sides of the %s get the same amount of sunlight, but only one side is seen from %s because the %s rotates around its own axis when it orbits %s.""" % ("Moon", "Earth", "Moon", "Earth"))
+
+
+mass_percentage = 1/6
+print("""You are lighter on the {moon}, because on the {moon} you would weigh about {mass} of your weight on Earth.""".format(moon="Moon", mass=mass_percentage))
+
+
+print(f"On the Moon, you would weigh about {mass_percentage} of your weight on Earth.")
+
+
+### Redondeando:
+print(f"On the Moon, you would weigh about {round(mass_percentage,2)} of your weight on Earth.")
+
+
