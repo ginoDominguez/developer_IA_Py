@@ -1,30 +1,29 @@
+import os
 
-"""new_planet = ''
-planets = []
+os.system('cls')
 
 
-while new_planet.lower() != 'done':
-    if new_planet:
-        planets.append(new_planet)
-    new_planet = input('Enter a new planet, or done if done')
+def distance_from_earth(destination):
+    if destination == "Moon":
+        return "238,855"
+    else:
+        return "Unable to compute to that destination"
 
-print(planets)
+#EndFunction
 
-planets = ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"]
+print(distance_from_earth("Moon"))
 
-planets = ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"]
 
-print("The first planet is ", planets[0])
-print("The second planet is ", planets[1])
-print("The third planet is ", planets[2])
 
-"""
+### report generation function
 
-from time import sleep
+def generate_report(main_tank, external_tank, hydrogen_tank):
+    output = f"""Fuel Report:
+    Main tank: {main_tank}
+    External tank: {external_tank}
+    Hydrogen tank: {hydrogen_tank} 
+    """
+    return output
+    
 
-countdown = [4, 3, 2, 1, 0]
-for number in countdown:
-    print(number)
-    sleep(1)
-print("Blast off!! 🚀")
-
+print(generate_report(80,70,95))
