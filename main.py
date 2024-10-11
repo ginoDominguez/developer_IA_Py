@@ -1,13 +1,30 @@
-planets = ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"]
+
+"""new_planet = ''
+planets = []
+
+
+while new_planet.lower() != 'done':
+    if new_planet:
+        planets.append(new_planet)
+    new_planet = input('Enter a new planet, or done if done')
 
 print(planets)
 
+planets = ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"]
 
-print("There are", len(planets), "planets")
+planets = ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"]
 
-planets.append("Pluto")
+print("The first planet is ", planets[0])
+print("The second planet is ", planets[1])
+print("The third planet is ", planets[2])
 
-print("Actually, there are", len(planets), "planets")
+"""
 
-print(planets[-1], "is the last planet")
+from time import sleep
+
+countdown = [4, 3, 2, 1, 0]
+for number in countdown:
+    print(number)
+    sleep(1)
+print("Blast off!! 🚀")
 
