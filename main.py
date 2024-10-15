@@ -1,18 +1,26 @@
-### Raise exceptions test
+### Sample od Use OOP:
 
+class Square:
+      def __init__(self):
+          self.__height = 2
+          self.__width = 2
+def set_side(self, new_side):
+          self.__height = new_side
+          self.__width = new_side
 
-true_values = ['yes', 'y']
-false_values = ['no', 'n']
+@property
+def get_height(self):
+    return self.__height
 
-def str_to_bool(value):
-    value = value.lower()
-    if value in true_values:
-        return True
-    elif value in false_values:
-        return False
+@height.setter
+def set_height(self, h):
+    if h>= 0 :
+        self.__height = h
     else:
-        raise ValueError('Invalid entry')
-    
-    
-str_to_bool("yes")
+        raise Exception("Ingresar un valor mayorn a cero")
 
+
+square = Square()
+square.__height = 3 # raises AttributeError
+
+print(square.__height)
