@@ -1,4 +1,4 @@
-### Game: Rocket, paper and scissors
+### Game: Rocket, paper and scissors Update
 
 
 class Participant:
